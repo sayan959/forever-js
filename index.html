@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#C7FFD8]">
+    <header>
+        <!-- ---------Navbar-------- -->
+        <nav id="navbar" class="bg-[#161D6F] flex justify-around items-center ">
+           <div>
+            <a href="">
+                <img class="w-24 p-2 sm:w-48 " src="./images/logo.png" alt="">
+            </a>
+           </div>
+           <div>
+            <ul class="flex gap-2 sm:gap-5">
+                <li class="text-white text-xs font-extralight md:text-xl md:font-semibold hover:underline underline-offset-8"><a href="./index.html">HOME</a></li>
+                <li class="text-white text-xs font-extralight md:text-xl md:font-semibold hover:underline underline-offset-8"><a href="#about-forever">ABOUT</a></li>
+                <li class="text-white text-xs font-extralight md:text-xl md:font-semibold hover:underline underline-offset-8"><a href="./product.html">PRODUCTS</a></li>
+                <li class="text-white text-xs font-extralight md:text-xl md:font-semibold hover:underline underline-offset-8"><a href="./contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <div>
+            <!-- <input type="text" class="rounded-xl p-2 w-14  lg:w-52 md:w-40" placeholder="Search"> -->
+             <button class="bg-[#98DED9] p-1 px-2 md:font-semibold md:p-2 md:px-4 rounded-2xl hover:bg-transparent hover:border-2 hover:text-white transition-colors duration-300 ease-in-out delay-100">Login</button>
+           </div>
+        </nav>
+    </header>
+
+    <!-- ---------Slider---------- -->
+    <section class="p-0 m-0 box-border">
+        <div class="relative overflow-hidden w-72 h-24 md:w-[90%] md:h-[500px] shadow mt-10 m-auto transition duration-1000">
+            <img id="slide" class="w-full h-full cursor-pointer absolute transition duration-1000 " src="./images/slider 1.jpg" alt="">
+            <img id="slide" class="w-full h-full cursor-pointer absolute transition duration-1000 " src="./images/slider 4.jpg" alt="">
+            <img id="slide" class="w-full h-full cursor-pointer absolute transition duration-1000 " src="./images/slider 3.jpg" alt="">
+            <img id="slide" class="w-full h-full cursor-pointer absolute transition duration-1000 " src="./images/slider 2.jpg" alt="">
+        </div>
+        <div class="text-center mt-5">
+            <button onclick="goPrev()" class="bg-[#98DED9] text-sm mb-5 p-1 px-2 md:font-semibold md:p-2 md:px-4 rounded-2xl hover:bg-transparent hover:border-blue-800 hover:border-2  transition-colors duration-300 ease-in-out delay-100">
+                Prev
+            </button>
+            <button onclick="goNext()" class="bg-[#98DED9] text-sm mb-5 p-1 px-2 md:font-semibold md:p-2 md:px-4 rounded-2xl hover:bg-transparent  hover:border-blue-800 hover:border-2  transition-colors duration-300 ease-in-out delay-100">
+                Next
+            </button>
+        </div>
+    </section>
+
+    <!-- ----------Product Section---------- -->
+     <section >
+        <div>
+            <div class="text-center m-5 md:m-10">
+                <h2 class=" text-xl font-medium  md:text-5xl md:font-semibold text-black">
+                    <span class="text-gray-500">LATEST </span>COLLECTIONS
+                </h2>
+                <p class="pt-2 text-xs text-justify items-center  md:font-semibold  md:text-xl">
+                    It has the latest dress design with a contemporary touch. Fusion dresses by Forever have long dresses and midi dresses with new dress designs
+                </p>
+            </div>
+        </div>
+        <!---------- For card---------- -->
+
+        <div class="grid place-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3  lg:gap-4 xl:gap-10 m-5 justify-center">
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl ">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img14.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Black Shart</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">25</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Boy Round Neck Pure Cotton T-shirt
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md ">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img3.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Top</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">38</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Girls Round Neck Cotton Top
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('/product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img24.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Shirt</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">26</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Boy Round Neck Pure Cotton Shirt
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img19.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">T-shirt</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">22</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Boy Round Neck Pure Cotton T-shirt
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img36.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Fit Jacket</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">68</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Women Zip-Front Relaxed Fit Jacket
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img39.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Printed Shirt</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">48</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Men Printed Plain Cotton Shirt
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img4.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">T-shirt</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">28</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Men Round Neck Pure Cotton T-shirt
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            <div class="w-full  bg-[#98DED9] border border-gray-200 rounded-lg shadow-xl">
+            
+                <div class=" overflow-hidden">
+                    <img class="rounded-t-lg w-full transition duration-300 ease-in-out transform hover:scale-110 " src="./images/p_img44.png" alt="Faction Image " />
+                </div>
+                <div class="">
+                  <div class="flex items-center">
+                    <h2 class="text-sm md:text-lg lg:text-xl font-semibold text-gray-800 pl-2">Jacket</h2>
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 ml-auto pr-2">$<span id="">70</span></h2>
+                  </div>
+                  <p class="text-gray-600 text-xs md:text-sm  mt-1 pl-2">
+                    Women Zip-Front Relaxed Fit Jacket
+                  </p>
+
+                  <button onclick="navigateToAnotherPage('./product.html')" class="w-full py-2 mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-md">
+                    View Product
+                  </button>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+
+     <!-- ----------------------About us-------------------- -->
+     <section id="about-forever">
+        <div class=" md:flex has-[400px]: md:h-96 w-[90%] mx-auto my-20  ">
+            <div id="Text-Side" class="w-full md:w-1/2 text-center my-auto md:py-0 ">
+                 <h1 class="text-xl md:text-3xl lg:text-5xl font-semibold"> 
+                    ABOUT <span class="text-gray-500">US</span>
+                 </h1>
+                 <p class="text-justify py-3 text-sm  lg:text-lg ">
+                    Forever was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.
+                 </p>
+            </div>
+            <div id="image-side" class="relative w-full md:w-1/2 h-60 md:h-full  ">
+                <div id="img-1" class="absolute left-14 top-10 md:left-6 md:top-24 lg:left-8 lg:top-14 xl:left-8 xl:top-5 shadow-[rgba(0,0,15,0.5)_-9px_-5px_3px_0px] rounded-xl overflow-hidden">
+                    <img class="w-40 md:w-[190px] lg:w-[280px] xl:w-[350px]" src="./images/sopping 1.jpg" alt="">
+                </div>
+                <div id="img-2" class=" absolute bottom-12 right-16 md:bottom-24 md:right-5 lg:bottom-14 lg:right-8 xl:bottom-5 xl:right-12 shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px]  rounded-xl overflow-hidden">
+                    <img class="w-40 md:w-[190px] lg:w-[280px] xl:w-[350px]" src="./images/shopping 2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!--=================== action Button and Image============== -->
+     <section >
+      <div class="flex flex-col md:flex-row items-center p-8 bg-[#98DED9]">
+        <!-- Left Side - Image -->
+        <div class="w-full md:w-1/2">
+          <img src="./images/sub-women.webp"  class="w-1/2 h-auto mx-auto rounded-lg shadow-lg">
+        </div>
+      
+        <!-- Right Side - Content -->
+        <div class="w-full md:w-1/2 mt-6 md:mt-0 md:ml-8 text-center md:text-left">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Discover Our New Features</h2>
+          <p class="text-gray-600 mb-6">
+            Learn about our latest updates and improvements! Our new features are designed to enhance your experience and provide more value.
+          </p>
+          <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+      
+     </section>
+
+     <!-- --------------------Police and Return--------------- -->
+
+     <section>
+       <div id="privacy-policy" class="my-32">
+        <div class="py-2 ">
+            <h1 class="font-semibold text-center text-2xl md:text-4xl text-gray-900">Why Forever Best?</h1>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-around gap-10 sm:gap-3 text-center py-4 my-4 text-sm sm:text-lg md:xl text-gray-900">
+            <div>
+                <img class="w-12 m-auto mb-4 cursor-pointer" src="./images/exchange.png" alt="">
+                <p class=" font-semibold">Easy Exchange Policy</p>
+                <p class="text-gray-600">We offer hassle free exchange policy</p>
+            </div>
+            <div>
+                <img class="w-12 m-auto mb-4 cursor-pointer" src="./images/return.png" alt="">
+                <p class=" font-semibold">7 Days Return Policy</p>
+                <p class="text-gray-600">We provide 7 days free return policy</p>
+            </div>
+            <div>
+                <img class="w-10 m-auto mb-4 cursor-pointer" src="./images/support.png" alt="">
+                <p class=" font-semibold">Best customer support</p>
+                <p class="text-gray-600">we provide 24/7 customer support</p>
+            </div>
+        </div>
+       </div>
+     </section>
+
+     <!-- --------------------Subscribe Now------------------- -->
+
+     <section>
+        <div class="text-center items-center mx-2 mb-5">
+            <p class="text-2xl md:text-3xl lg:text-4xl font-medium text-gray-800">
+                Subscribe now & get 20% off
+            </p>
+            <p class="text-gray-600 m-3">
+                Subscribe today and receive 20% off, exclusive offers, and the latest product news to your inbox!
+            </p>
+            <form class="w-full bg-white sm:w-1/2 flex items-center mx-auto my-6 pl-3 rounded-md">
+                <input class="w-full flex-1 p-3 outline-none" type="email" placeholder="Enter your email">
+                <button type="submit" class="text-sm font-semibold px-10 py-5 text-white bg-blue-600 hover:bg-blue-700 rounded-e-md">SUBSCRIBE</button>
+            </form>
+        
+        </div>
+     </section>
+
+     <!-- --------------Fotter-------------- -->
+      <footer>
+        <div class="bg-[#161D6F]">
+            <div class=' flex flex-col sm:grid grid-cols-3 gap-14 mx-10 my-10 mt-40 pt-5 text-sm'>
+                <div>
+                    <a href="#navbar"><img  src="./images/logo.png" class='mb-5 w-32 ' alt="" /></a>
+                    <p class='w-full md:w-2/3 text-gray-200 text-justify'>
+                        Forever was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.
+                    </p>
+                </div>
+    
+                <div>
+                    <p class='text-xl font-medium mb-5 text-white'>COMPANY</p>
+                    <ul class='flex flex-col gap-1 text-white'>
+                        <li><a href="#forever">Forever</a></li>
+                        <li><a href="">Nexus</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class='text-xl font-medium mb-5 text-white'>GET IN TOUCE</p>
+                    <ul class='flex flex-col gap-1 text-white'>
+                        <li>+880 1889354418</li>
+                        <li>shayon808@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+                <div>
+    
+                    <p class='py-5 text-sm text-center text-white'>copyright 2024@ forever.com - All Right Reserved.</p>
+                </div>
+        </div>
+      </footer>
+
+      
+
+
+    
+
+
+      <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+</html>
